@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { InvestmentNews } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const getInvestmentAdvice = async (): Promise<InvestmentNews> => {
   try {
